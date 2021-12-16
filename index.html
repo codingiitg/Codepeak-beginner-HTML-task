@@ -6,6 +6,7 @@
         <title>AboutMe</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+          <link rel="stylesheet" href="./animations.css">  <!-- Added animations. -->
 
         <!-- Meta Tags for Page Related Properties
 	================================================================================ -->
@@ -32,15 +33,15 @@
         <meta name="twitter:title" content="www.apsweb.design">
         <meta name="twitter:description" content="Welcome to my website">
         <meta name="twitter:image" content="icon.png">
-	
+
 	<!-- Google Search Console
         ================================================================================ -->
 	<meta name="google-site-verification" content="kPbF4hAdCeIGR-tDiElxQw_IjF8PwZD629vtkseYIK8" />
-	
-	
-    
-	
-	
+
+
+
+
+
     <style>
         @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 
@@ -55,14 +56,14 @@
         }
 
         body {
-		
+
 	    font-family: 'Quicksand';
 
             color: #324e63;
 
             margin: 0;
         }
-	
+
 /* 	@font-face {
   	font-family: 'Pacifico';
 	font-style: normal;
@@ -116,25 +117,32 @@
             fill: currentColor;
         }
 
-        .wrapper {
-            width: 100%;
+      /*  .wrapper {
+          width: 100%;
 
-            height: auto;
+          height: auto;
 
-            min-height: 100vh;
+          min-height: 100vh;
 
-            padding: 50px 20px;
+          padding: 50px 20px;
 
-            padding-top: 100px;
+          padding-top: 100px;
 
-            display: flex;
+          display: flex;
+          background-size: 600% 100% !important;
 
-            background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+          background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+          animation: gradient 16s linear infinite;
+  animation-direction: alternate;
 
-            display: flex;
-
-            background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
         }
+
+        @keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+*/
+
 
         @media screen and (max-width: 768px) {
             .wrapper {
@@ -563,21 +571,12 @@
             transition: all 0.3s;
         }
 
-        .switcherMood {
-            border: none;
-            position: absolute;
-            top: 30px;
-            right: 40px;
-            background: #c4c4c4;
-            padding: 0.4em;
-            color: #fff;
-            font-size: 25px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
+
+
+
     </style></head>
 
-    
+
 
     <body>
         <div class="wrapper">
@@ -587,18 +586,18 @@
                 </div>
 
                 <div class="profile-card__cnt js-profile-cnt">
-                    <div class="profile-card__name">(Your Name)</div>
+                    <div class="profile-card__name">Keerti Lata</div>
 
-                    <div class="profile-card__txt"><strong>Indian • (Age) Years Old • Student/Developer •(Interensts)for e.g. ML/AI & Computer Vision Enthusiast</strong></div>
+                    <div class="profile-card__txt"><strong>Indian • 18 Years Old • Student/Developer •Competitive Coder •Web Devleoper •Cricket •Music •Anime</strong></div>
                     <div class="profile-card-inf">
-                        <p>Hello! I am (your name here). I'm a (age) years old Indian developer.</p>
-			    <p>I am a student at (Institue Name)</p>
-                        <p>(About yourself) for e.g. I love all aspects of technology; especially Computer Vision, and managing <a class="infolink">servers</a></p>
-                        <p>I have worked on some projects like <a class="infolink">Image Classifier of Humans & Cars</a> using Machine Learning and <a target="_blank" class="infolink">Coursera Reviews based Sentiment Analysis</a> with Machine Learning Based Approach.</p>
-			<p>I love handling servers and testing new scripts, contact me if you need help ;)</p>
+                        <p>Hello! I am Keerti Lata. I'm an eighteen years old Indian Student.</p>
+			    <p>I am a student at Indian Institue of Technology,Guwahati</p>
+                        <p> I am a learner and love to learn new things. I'm  a beginner in open source. Hoping to learn a lot through<a class="infolink">Codepeak</a></p>
+                        <p>I also like competitive programming and problem solving. I have done some beginner level projects in <a class="infolink">Web Developement.</a> And I want to try out and do more more projects in web developement. </p>
+			<p>I'm learning<a class="infolink">Backend Developement </a>these days.</p>
                         <p>
-                            Currently have 1 VPS from <a href="https://nanokvm.net" target="_blank" class="infolink">NanoKVM</a></p>
-                        <p>I play Rocket League, Minecraft &amp; some other <a class="infolink">games</a> on my <a class="infolink">Lappy</a> sometimes in my free time.</p>
+                           </p>
+                        <p>I enjoy watching <a class="infolink">Cricket, Anime</a>and <a class="infolink">Korean Dramas</a>in my free time.</p>
                     </div>
                     <div class="profile-card-social">
                         <!-- <a href="https://example.com/" target="_blank" class="profile-card-social__item steam">
@@ -606,7 +605,7 @@
                                 <i class="fab fa-steam"></i>
                             </span>
                         </a> -->
-                        <a href="#" target="_blank" class="profile-card-social__item discord">
+                        <a href="https://example.com/" target="_blank" class="profile-card-social__item discord">
                             <span class="icon-font">
                                 <i class="fab fa-discord"></i>
                             </span>
@@ -616,16 +615,11 @@
                                 <i class="fab fa-telegram"></i>
                             </span>
                         </a>
-                        <a href="#" target="_blank" class="profile-card-social__item youtube">
+                        <a href="https://example.com/" target="_blank" class="profile-card-social__item youtube">
                             <span class="icon-font">
                                 <i class="fab fa-youtube"></i>
                             </span>
                         </a>
-                        <!-- <a href="" target="_blank" class="profile-card-social__item paypal">
-                            <span class="icon-font">
-                                <i class="fab fa-paypal"></i>
-                            </span>
-                        </a> -->
                         <a href="mailto:example@example.com" class="profile-card-social__item envelope">
                             <span class="icon-font">
                                 <i class="fas fa-envelope"></i>
@@ -633,33 +627,20 @@
                         </a>
                     </div>
                         <img src="https://s11.flagcounter.com/count2/BLsT/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></br></br>
-			
+
                 </div>
 
-                <button class="switcherMood"><i class="fas fa-moon"></i></button>
+
             </div>
         </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- NightMode -->
-<script type="text/javascript">
-        $(function () {
-            $(".switcherMood").on("click", function () {
-                if (!$(".wrapper").hasClass("dark")) {
-                    $(".wrapper").addClass("dark");
-                    $(".profile-card").css("background", "#09192e");
-                    $(".switcherMood i").attr("class", "fas fa-sun");
-                } else {
-                    $(".wrapper").removeClass("dark");
-                    $(".profile-card").css("background", "#ffff");
-                    $(".switcherMood i").attr("class", "fas fa-moon");
-                }
-            });
-        });
-    </script>
+
+
 
 <!-- Cloudflare Web Analytics -->
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;717e095309084bee9f821eb9c9444bae&quot;}">
 </script>
 <!-- End Cloudflare Web Analytics -->
-</body></html>
+</body>
+</html>
