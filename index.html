@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en"><head>
         <meta charset="UTF-8">
@@ -53,7 +52,6 @@
         * {
             box-sizing: border-box;
         }
-
         body {
 		
 	    font-family: 'Quicksand';
@@ -129,13 +127,22 @@
 
             display: flex;
 
-            background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+             background-image: linear-gradient(to bottom right, red, pink,white,blue,purple);
+             animation-name: animation;
+             animation-duration: 4s;
+             animation-iteration-count:infinite;
+             animation-direction: alternate;
+             animation-timing-function: ease;  
+     }
 
-            display: flex;
-
-            background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
-        }
-
+     @keyframes animation {
+    100% {background-image: linear-gradient(to bottom right, pink,white,blue,purple,red)}
+    75% {background-image: linear-gradient(to bottom right, ,white,blue,purple,red,pink)}
+    50% {background-image: linear-gradient(to bottom right, blue,purple,red, pink,white)}
+    25% {background-image: linear-gradient(to bottom right,purple, red, pink,white,blue)}
+    0% {background-image: linear-gradient(to bottom right,purple, red, pink,white,blue)}
+}
+            
         @media screen and (max-width: 768px) {
             .wrapper {
                 height: auto;
@@ -563,18 +570,7 @@
             transition: all 0.3s;
         }
 
-        .switcherMood {
-            border: none;
-            position: absolute;
-            top: 30px;
-            right: 40px;
-            background: #c4c4c4;
-            padding: 0.4em;
-            color: #fff;
-            font-size: 25px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
+   
     </style></head>
 
     
@@ -589,24 +585,22 @@
                 <div class="profile-card__cnt js-profile-cnt">
                     <div class="profile-card__name">(Your Name)</div>
 
-                    <div class="profile-card__txt"><strong>Indian • (Age) Years Old • Student/Developer •(Interensts)for e.g. ML/AI & Computer Vision Enthusiast</strong></div>
+                    <div class="profile-card__txt"><strong>Indian • (Age) Years Old • Student/Developer •(Interests)for e.g. Web and App Development Enthusiast</strong></div>
                     <div class="profile-card-inf">
-                        <p>Hello! I am (your name here). I'm a (age) years old Indian developer.</p>
-			    <p>I am a student at (Institue Name)</p>
-                        <p>(About yourself) for e.g. I love all aspects of technology; especially Computer Vision, and managing <a class="infolink">servers</a></p>
-                        <p>I have worked on some projects like <a class="infolink">Image Classifier of Humans & Cars</a> using Machine Learning and <a target="_blank" class="infolink">Coursera Reviews based Sentiment Analysis</a> with Machine Learning Based Approach.</p>
-			<p>I love handling servers and testing new scripts, contact me if you need help ;)</p>
-                        <p>
-                            Currently have 1 VPS from <a href="https://nanokvm.net" target="_blank" class="infolink">NanoKVM</a></p>
-                        <p>I play Rocket League, Minecraft &amp; some other <a class="infolink">games</a> on my <a class="infolink">Lappy</a> sometimes in my free time.</p>
+                        <p>Hello! I am Gayathri. I'm a growing Indian developer.</p>
+			    <p>I am a student at IIT Guwahati</p>
+                        <p>(About yourself) for e.g. I love all aspects of technology; especially Web Development, and the concept of Open source<a class="infolink">servers</a></p>
+                        <p>I am starting to learn more about it and am eager to take a deep dive </p>
+			<p>I love solving problems and the algorithms related</p>
+			<p>I love music and this love towards both these things made me a multi-tasker whose leisure activity is to code while listening to songs. v.v </p>
                     </div>
-                    <div class="profile-card-social">
-                        <!-- <a href="https://example.com/" target="_blank" class="profile-card-social__item steam">
+                   <!-- <div class="profile-card-social">
+                         <a href="https://example.com/" target="_blank" class="profile-card-social__item steam">
                             <span class="icon-font">
                                 <i class="fab fa-steam"></i>
                             </span>
                         </a> -->
-                        <a href="#" target="_blank" class="profile-card-social__item discord">
+                        <a href="https://example.com/" target="_blank" class="profile-card-social__item discord">
                             <span class="icon-font">
                                 <i class="fab fa-discord"></i>
                             </span>
@@ -616,7 +610,7 @@
                                 <i class="fab fa-telegram"></i>
                             </span>
                         </a>
-                        <a href="#" target="_blank" class="profile-card-social__item youtube">
+                        <a href="https://example.com/" target="_blank" class="profile-card-social__item youtube">
                             <span class="icon-font">
                                 <i class="fab fa-youtube"></i>
                             </span>
@@ -636,27 +630,10 @@
 			
                 </div>
 
-                <button class="switcherMood"><i class="fas fa-moon"></i></button>
             </div>
         </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- NightMode -->
-<script type="text/javascript">
-        $(function () {
-            $(".switcherMood").on("click", function () {
-                if (!$(".wrapper").hasClass("dark")) {
-                    $(".wrapper").addClass("dark");
-                    $(".profile-card").css("background", "#09192e");
-                    $(".switcherMood i").attr("class", "fas fa-sun");
-                } else {
-                    $(".wrapper").removeClass("dark");
-                    $(".profile-card").css("background", "#ffff");
-                    $(".switcherMood i").attr("class", "fas fa-moon");
-                }
-            });
-        });
-    </script>
 
 <!-- Cloudflare Web Analytics -->
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;717e095309084bee9f821eb9c9444bae&quot;}">
